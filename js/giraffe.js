@@ -620,6 +620,48 @@ $(function () {
 				  alert("select a element first!");
 			  }
 		  });	
+		  
+		   //字体样式一
+		   $('#textFont1').click(function(){
+			   alert("click");
+			  var activeObject = canvas.getActiveObject();
+			  if (activeObject){
+			  	activeObject.set('fontFamily', 'arial');
+				canvas.renderAll();
+			  }
+			  else{
+				  alert("select a element first!");
+			  }
+		  });
+		  
+		  //字体样式二
+		   $('#textFont2').click(function(){
+			   alert("click");
+			  var activeObject = canvas.getActiveObject();
+			  if (activeObject){
+			  	activeObject.set('fontFamily', 'helvetica');
+				canvas.renderAll();
+			  }
+			  else{
+				  alert("select a element first!");
+			  }
+		  });
+		  
+		  //字体样式三
+		   $('#textFont3').click(function(){
+			   alert("click");
+			  var activeObject = canvas.getActiveObject();
+			  if (activeObject){
+			  	activeObject.set('fontFamily', 'myriad pro');
+				canvas.renderAll();
+			  }
+			  else{
+				  alert("select a element first!");
+			  }
+		  });
+		  
+		  
+		   
 	
 	
 
