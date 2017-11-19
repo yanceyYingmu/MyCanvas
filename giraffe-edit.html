@@ -235,9 +235,9 @@
 							
 							<div id="grid">
 								<div class="column size-1of1">
-									<div><button type="button" class="btn btn-default btn-lg b-20 button-dashed">点击添加标题</button></div>
-									<div><button type="button" class="btn btn-default b-20">点击添加副标题</button></div>
-									<div><button type="button" class="btn btn-default btn-sm b-20">点击添加正文</button></div>
+									<div><button type="button" class="btn btn-default btn-lg b-20 button-dashed" id="addText">点击添加标题</button></div>
+									<div><button type="button" class="btn btn-default b-20" id="addIText" >点击添加副标题</button></div>
+									<div><button type="button" class="btn btn-default btn-sm b-20" id="addTextbox">点击添加正文</button></div>
 								</div>
 							</div>
 							
@@ -359,21 +359,21 @@
 		</div>
 		<div>文字</div>
 		<div class="btn-group b-30" role="group">
-		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe658;</i></button>
-		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe659;</i></button>
-		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe65c;</i></button>
+		  <button type="button" class="btn btn-default" id="tofontBold"><i class="iconfont if-size-2">&#xe658;</i></button>
+		  <button type="button" class="btn btn-default" id="tofontItalic"><i class="iconfont if-size-2">&#xe659;</i></button>
+		  <button type="button" class="btn btn-default" id="toTextDecoration"><i class="iconfont if-size-2">&#xe65c;</i></button>
 		</div>
 		<div>水平对齐</div>
 		<div class="btn-group b-30" role="group">
-		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe65d;</i></button>
-		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe660;</i></button>
-		  <button type="button" class="btn btn-default" id=""><div class="if-sX"><i class="iconfont if-size-2">&#xe65d;</i></div></button>
+		  <button type="button" class="btn btn-default" id="toTextAlignLeft"><i class="iconfont if-size-2">&#xe65d;</i></button>
+		  <button type="button" class="btn btn-default" id="toTextAlignCenter"><i class="iconfont if-size-2">&#xe660;</i></button>
+		  <button type="button" class="btn btn-default" id="toTextAlignRight"><div class="if-sX"><i class="iconfont if-size-2">&#xe65d;</i></div></button>
 		</div>
 		<div>垂直对齐</div>
 		<div class="btn-group b-30" role="group">
-		  <button type="button" class="btn btn-default" id=""><div class="if-ro"><i class="iconfont if-size-2">&#xe65d;</i></div></button>
-		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe661;</i></button>
-		  <button type="button" class="btn btn-default" id=""><div class="if-ro90"><i class="iconfont if-size-2">&#xe65d;</i></div></button>
+		  <button type="button" class="btn btn-default" id="toVerticalAlignLeft"><div class="if-ro"><i class="iconfont if-size-2">&#xe65d;</i></div></button>
+		  <button type="button" class="btn btn-default" id="toVerticalAlignCenter"><i class="iconfont if-size-2">&#xe661;</i></button>
+		  <button type="button" class="btn btn-default" id="toVerticalAlignRight"><div class="if-ro90"><i class="iconfont if-size-2">&#xe65d;</i></div></button>
 		</div>			
         <div class="controls">
             <p> <span>透明:</span> <label> <input type="range" id="opacityControl" value="0" min="0" max="100"></label>  <span id="opacityControlValue">值:</span>  </p>
@@ -393,7 +393,6 @@
 	<p>tip: <span id="tipSpan"></span></p>   
   </div>
 </nav>
-
 
 <script src="js/salvattore.min.js"></script>
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>

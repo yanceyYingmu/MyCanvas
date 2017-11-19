@@ -466,6 +466,162 @@ $(function () {
 			$(this).removeClass("ShapeInside");
 		}
 	});
+	
+	//加粗		  
+
+          $('#tofontBold').click(function(){
+			  var activeObject = canvas.getActiveObject();
+			  if (activeObject){
+				  var curState = activeObject.get('fontWeight');
+				  if(curState == 'bold')
+				  {
+					 curState = 'normal'; 
+				  }
+				  else {
+					  curState = 'bold'; 
+				  }
+			  	activeObject.set('fontWeight', curState);
+				canvas.renderAll();
+			  }
+			  else{
+				  alert("select a element first!");
+			  }
+		  });	
+			
+		  //倾斜		  
+
+          $('#tofontItalic').click(function(){
+			  var activeObject = canvas.getActiveObject();
+			  if (activeObject){
+				  var curState = activeObject.get('fontStyle');
+				  if(curState == 'italic')
+				  {
+					 curState = 'normal'; 
+				  }
+				  else {
+					  curState = 'italic'; 
+				  }
+			  	activeObject.set('fontStyle', curState);
+				canvas.renderAll();
+			  }
+			  else{
+				  alert("select a element first!");
+			  }
+		  });
+
+          //下划线		  
+
+          $('#toTextDecoration').click(function(){
+			  var activeObject = canvas.getActiveObject();
+			  if (activeObject){
+				  
+				  var curState = activeObject.get('underline');
+				  if(curState == 'underline')
+				  {
+					 curState = ''; 
+				  }
+				  else {
+					  curState = 'underline'; 
+				  }
+				  
+			  	//activeObject.set('textDecoration', 'underline');
+				activeObject.set('underline', curState);
+				canvas.renderAll();
+			  }
+			  else{
+				  alert("select a element first!");
+			  }
+			  /*
+			  var value = $scope.isUnderline()? getActiveStyle('textDecoration').replace('underline', '')
+			  : (getActiveStyle('textDecoration') + ' underline');
+
+			setActiveStyle('textDecoration', value);
+			setActiveStyle('underline', !getActiveStyle('underline'));
+			*/
+
+		  });		  
+		  
+		  //左对齐		  
+
+          $('#toTextAlignLeft').click(function(){
+			  var activeObject = canvas.getActiveObject();
+			  if (activeObject){
+			  	activeObject.set('textAlign', 'left');
+				canvas.renderAll();
+			  }
+			  else{
+				  alert("select a element first!");
+			  }
+		  });	
+		  
+		  //居中		  
+
+          $('#toTextAlignCenter').click(function(){
+			  var activeObject = canvas.getActiveObject();
+			  if (activeObject){
+			  	activeObject.set('textAlign', 'center');
+				canvas.renderAll();
+			  }
+			  else{
+				  alert("select a element first!");
+			  }
+		  });	
+		  
+		  	
+		  
+		  //右对齐		  
+
+          $('#toTextAlignRight').click(function(){
+			  var activeObject = canvas.getActiveObject();
+			  if (activeObject){
+			  	activeObject.set('textAlign', 'right');
+				canvas.renderAll();
+			  }
+			  else{
+				  alert("select a element first!");
+			  }
+		  });	
+		  
+		  //垂直左对齐		  
+
+          $('#toVerticalAlignLeft').click(function(){
+			  var activeObject = canvas.getActiveObject();
+			  if (activeObject){
+			  	activeObject.set('textBaseline', 'top');
+				canvas.renderAll();
+			  }
+			  else{
+				  alert("select a element first!");
+			  }
+		  });	
+		  
+		  //垂直居中对齐		  		  
+
+          $('#toVerticalAlignCenter').click(function(){
+			  var activeObject = canvas.getActiveObject();
+			  if (activeObject){
+			  	activeObject.set('textBaseline', 'middle');
+				canvas.renderAll();
+			  }
+			  else{
+				  alert("select a element first!");
+			  }
+		  });		
+		  
+		  //垂直右对齐		  	  
+
+          $('#toVerticalAlignRight').click(function(){
+			  var activeObject = canvas.getActiveObject();
+			  if (activeObject){
+			  	activeObject.set('textBaseline', 'bottom');
+				canvas.renderAll();
+			  }
+			  else{
+				  alert("select a element first!");
+			  }
+		  });	
+	
+	
 
 	// 绑定动态加入div的单击事件
 	$('body').on('click', '#localImageListLeft .ResourceImage-item', function (e) {
