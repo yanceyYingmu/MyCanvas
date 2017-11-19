@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+	<title>长颈鹿编辑器giraffeEdit</title>
+    <!-- jquery and fabric -->	
+	<script src="js/jquery.min.js"></script>
+	<script src="js/fabric.js"></script>
+    <!-- Bootstrap -->
+	<link rel="shortcut icon" href="favicon.ico" /><!--网站小图标-->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="style/normalize.css" rel="stylesheet">
+	<link rel="stylesheet" href="style/giraffe.css" rel="stylesheet">
+	
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+<body>
+
+<div class="container-fluid">
+	<div class="row top-toolbar">
+			<div class="col-md-3 bd-left">
+				<img src="image/logo.svg" height="60px"><span class="badge">1.0</span>
+			</div>
+			<div class="col-md-7">
+				<ul class="list-inline">
+				<li><a href="#"><i class="iconfont if-size">&#xe633;</i></a></li>
+				<li class="if-sX"><a href="#"><i class="iconfont if-size">&#xe633;</i></a></li>
+				<li><a href="#"><i class="iconfont if-size">&#xe639;</i></a></li>
+				</ul>
+			</div>
+			<div class="col-md-2 bd-right">
+				
+			</div>
+	</div>
+</div> 
+
+
+<!--编辑部分-->
+<div class="container-fluid md-edit-body">
+	<div class="row md-height-100">
+			<div class="col-md-3 md-height-100 bd-left">
+				<div class="md-height-100">
+					<div class="md-tool-icon">
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation"><a href="#template" aria-controls="active" role="tab" data-toggle="tab"><i class="iconfont if-size">&#xe62a;</i></a></li>
+    <li role="presentation" class="active"><a href="#image" aria-controls="image" role="tab" data-toggle="tab"><i class="iconfont if-size">&#xe62b;</i></li>
+    <li role="presentation"><a href="#text" aria-controls="text" role="tab" data-toggle="tab"><i class="iconfont if-size">&#xe62c;</i></a></li>
+    <li role="presentation"><a href="#element" aria-controls="element" role="tab" data-toggle="tab"><i class="iconfont if-size">&#xe62d;</i></a></li>
+	<li role="presentation"><a href="#background" aria-controls="background" role="tab" data-toggle="tab"><i class="iconfont if-size">&#xe631;</i></a></li>
+	<li role="presentation"><a href="#layer" aria-controls="layer" role="tab" data-toggle="tab"><i class="iconfont if-size">&#xe632;</i></a></li>
+</ul>
+					</div>
+					
+					<!--内容部分-->
+					
+					<div class="md-tool-content">
+					<!-- Tab panes -->
+					<div class="tab-content">
+						<!-- 模板模块 -->
+						<div role="tabpanel" class="tab-pane" id="template">
+						
+						<ul class="nav nav-tabs lr-10 b-40" role="tablist">
+							<li role="presentation" class="active">
+							<a href="#template-1" aria-controls="active" role="tab" data-toggle="tab">模块</a>
+							</li>
+							<li role="presentation">
+							<a href="#template-2" aria-controls="image" role="tab" data-toggle="tab">板式</a>
+							</li>
+						</ul>
+						
+						<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active fade in" id="template-1">
+							<!-- 下拉框 -->
+							<div class="dropdown b-30 lr-10">
+							  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								请选择
+								<span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#">优惠券 | 收藏夹</a></li>
+								<li><a href="#">标题</a></li>
+								<li><a href="#">店家说 | 公告</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">宝贝展示 | 模特展示</a></li>
+								<li><a href="#">细节展示</a></li>
+								<li><a href="#">关联推荐</a></li>
+							  </ul>
+							</div>
+							
+							<!-- image-group -->
+							<div id="grid">
+								<div class="column size-1of2">
+									<div><img src="https://img.alicdn.com/sns_album/TB1e_RSXgLD8KJjSszewu1GRpXa.png"></div>
+									<div><img src="https://img.alicdn.com/sns_album/TB1XrARLXXXXXXaXFXXwu0bFXXX.png"></div>
+									<div><img src="https://img.alicdn.com/sns_album/TB1oNURLXXXXXXVXFXXwu0bFXXX.png"></div>
+								</div>
+								<div class="column size-1of2">
+									<div><img src="https://img.alicdn.com/sns_album/TB1SfuALpXXXXXrXVXXwu0bFXXX.png"></div>
+									<div><img src="https://img.alicdn.com/sns_album/TB1HrkuPXXXXXataXXXwu0bFXXX.png"></div>
+									<div><img src="https://img.alicdn.com/sns_album/TB18E_3RXXXXXXfXXXXSutbFXXX.jpg"></div>
+								</div>
+							</div>
+						</div>
+						
+						<div role="tabpanel" class="tab-pane fade in" id="template-2">
+							<!-- 下拉框 -->
+							<div class="dropdown b-30 lr-10">
+							  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+								请选择
+								<span class="caret"></span>
+							  </button>
+							  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+								<li><a href="#">一张 | 两张图片</a></li>
+								<li><a href="#">三张 | 四张图片</a></li>
+								<li><a href="#">五张 | 六张图片</a></li>
+								<li role="separator" class="divider"></li>
+								<li><a href="#">七张图片</a></li>
+								<li><a href="#">自由布局</a></li>
+								<li><a href="#">均分</a></li>
+							  </ul>
+							</div>
+							
+							<!-- image-group -->
+							<div id="grid">
+								<div class="column size-1of3">
+									<div><img src="image/temp-3.png"></div>
+									<div><img src="image/temp-4.png"></div>
+									<div><img src="image/temp-7.png"></div>
+								</div>
+								<div class="column size-1of3">
+									<div><img src="image/temp-1.png"></div>
+									<div><img src="image/temp-5.png"></div>
+									<div><img src="image/temp-8.png"></div>
+								</div>
+								<div class="column size-1of3">
+									<div><img src="image/temp-2.png"></div>
+									<div><img src="image/temp-6.png"></div>
+									<div><img src="image/temp-9.png"></div>
+								</div>
+							</div>
+						
+						</div>
+						</div>
+						</div>
+						<!-- //模板结束 -->
+						<!-- 图片开始 -->
+						<div role="tabpanel" class="tab-pane active" id="image">
+
+						<ul class="nav nav-tabs b-40 lr-10" role="tablist">
+							<li role="presentation" class="active">
+							<a href="#image-1" aria-controls="active" role="tab" data-toggle="tab">本地</a>
+							</li>
+							<li role="presentation">
+							<a href="#image-2" aria-controls="image" role="tab" data-toggle="tab">网络</a>
+							</li>
+						</ul>
+						
+						<div class="tab-content">
+						<div role="tabpanel" class="tab-pane active fade in" id="image-1">
+
+							<div class="lr-10 b-30 white">
+							<input type="file" id="addLocalImageFile" name="img" />
+							</div>
+
+							<!-- image-group -->
+							<div id="grid">
+								<div class="column size-1of2" id="localImageListLeft">
+									<div><img src="image/stuff/img (1).png"></div>
+									<div><img src="image/stuff/img (2).png"></div>
+									<div><img src="image/stuff/img (3).png"></div>
+								</div>
+								<div class="column size-1of2" id="localImageListRight">
+									<div><img src="image/stuff/img (3).png"></div>
+									<div><img src="image/stuff/img (5).png"></div>
+									<div><img src="image/stuff/img (6).png"></div>
+								</div>
+							</div>
+							
+						</div>
+							
+							<div role="tabpanel" class="tab-pane fade in" id="image-2">
+
+							<!-- input-group -->
+							<div class="input-group b-30 lr-10">
+								<input type="text" class="form-control" placeholder="Search for...">
+								<span class="input-group-btn">
+								<button class="btn btn-default" type="button">Go!</button>
+							  </span>
+							</div>
+							
+							<!-- image-group -->
+							<div id="grid">
+								<div id="localImageListLeft" class="column size-1of2">
+									<div class="ResourceImage-item"><img src="image/stuff/img (7).png"></div>
+									<div class="ResourceImage-item"><img src="image/stuff/img (8).png"></div>
+									<div class="ResourceImage-item"><img src="image/stuff/img (9).png"></div>
+								</div>
+								<div id="localImageListRight" class="column size-1of2">
+									<div class="ResourceImage-item"><img src="image/stuff/img (10).png"></div>
+									<div class="ResourceImage-item"><img src="image/stuff/img (11).png"></div>
+									<div class="ResourceImage-item"><img src="image/stuff/img (12).png"></div>
+								</div>
+							</div>							
+							
+							</div>
+						</div>
+						
+						</div>
+						<!-- //图片结束 -->
+						
+						<!-- 文字开始 -->
+						<div role="tabpanel" class="tab-pane" id="text">
+
+						<ul class="nav nav-tabs b-40 lr-10" role="tablist">
+							<li role="presentation" class="active">
+							<a href="#text-1" aria-controls="active" role="tab" data-toggle="tab">添加文字</a>
+							</li>
+							<li role="presentation">
+							<a href="#text-2" aria-controls="image" role="tab" data-toggle="tab">文字样式</a>
+							</li>
+						</ul>
+						
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active fade in" id="text-1">
+							
+							<div id="grid">
+								<div class="column size-1of1">
+									<div><button type="button" class="btn btn-default btn-lg b-20 button-dashed">点击添加标题</button></div>
+									<div><button type="button" class="btn btn-default b-20">点击添加副标题</button></div>
+									<div><button type="button" class="btn btn-default btn-sm b-20">点击添加正文</button></div>
+								</div>
+							</div>
+							
+							</div>
+							<div role="tabpanel" class="tab-pane fade in" id="text-2">
+							<div id="grid">
+								<div class="column size-1of1">
+									<div><img src="image/text/01.png"></div>
+									<div><img src="image/text/02.png"></div>
+									<div><img src="image/text/03.png"></div>
+								</div>
+							</div>
+							</div>
+						</div>						
+						
+						
+						</div>
+						<!-- 文字结束 -->
+						<!-- 元素开始-->
+						<div role="tabpanel" class="tab-pane" id="element">
+						
+						<ul class="nav nav-tabs b-40 lr-10" role="tablist">
+							<li role="presentation" class="active">
+							<a href="#element-1" aria-controls="active" role="tab" data-toggle="tab">元素</a>
+							</li>
+							<li role="presentation">
+							<a href="#element-2" aria-controls="image" role="tab" data-toggle="tab">收藏</a>
+							</li>
+						</ul>
+
+						<div class="tab-content">
+							<div role="tabpanel" class="tab-pane active fade in" id="element-1">
+							<div id="grid">
+								<div class="column size-1of3">
+									<div><img src="image/element/01.png"></div>
+									<div><img src="image/element/02.png"></div>
+								</div>
+								<div class="column size-1of3">
+									<div><img src="image/element/03.png"></div>
+									<div><img src="image/element/04.png"></div>
+								</div>
+								<div class="column size-1of3">
+									<div><img src="image/element/05.png"></div>
+								</div>
+							</div>
+							</div>
+							
+							<div role="tabpanel" class="tab-pane fade in" id="element-2">
+							<div id="grid">
+								<div class="column size-1of3">
+									<div><img src="image/element/01.png"></div>
+									<div><img src="image/element/02.png"></div>
+								</div>
+								<div class="column size-1of3">
+									<div><img src="image/element/03.png"></div>
+									<div><img src="image/element/04.png"></div>
+								</div>
+								<div class="column size-1of3">
+									<div><img src="image/element/05.png"></div>
+								</div>
+							</div>
+							</div>
+						</div>	
+						
+						
+						
+						
+						</div>
+						<!--//元素结束-->
+						<div role="tabpanel" class="tab-pane" id="background">背景</div>
+						<div role="tabpanel" class="tab-pane" id="layer">层</div>
+					</div>
+					</div>
+					<!--//内容部分-->
+				</div>
+			</div>
+			<div class="col-md-7 md-height-100 bd-center">
+			<!--警告栏-->
+				<div class="alert alert-warning alert-dismissible fade in tblr-10" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				这是一个警告栏,右侧可以关闭。
+				</div>
+			<!--//警告栏-->
+				<div class="md-canvas">
+				<canvas id="myCanvas" width="990" height="600" style="border:1px solid #030303;">
+				</canvas>
+				</div>
+			
+			</div>
+			<div class="col-md-2 md-height-100 bd-right">
+				<div class="md-right-tool white">
+<!--功能按键-->
+		<div>编辑</div>
+		<div class="btn-group b-30" role="group">
+		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe641;</i></button>
+		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe64f;</i></button>
+		  <button type="button" class="btn btn-default" id="toCopy" name="复制"><i class="iconfont if-size-2">&#xe643;</i></button></button>
+		  <button type="button" class="btn btn-default" id="toDel" name="删除"><i class="iconfont if-size-2">&#xe644;</i></button></button>
+		</div>
+		<div>图层控制</div>
+		<div class="btn-group b-30" role="group">
+		  <button type="button" class="btn btn-default" id="toTop" name="置顶"><i class="iconfont if-size-2">&#xe647;</i></button>
+		  <button type="button" class="btn btn-default" id="toUp" name="上移一层"><i class="iconfont if-size-2">&#xe649;</i></button>
+		  <button type="button" class="btn btn-default" id="toDown" name="下移一层"><i class="iconfont if-size-2">&#xe64a;</i></button>
+		  <button type="button" class="btn btn-default" id="toBottom" name="置底"><i class="iconfont if-size-2">&#xe648;</i></button>
+		</div>
+		<div>旋转/翻转</div>
+		<div class="btn-group b-30" role="group">
+		  <button type="button" class="btn btn-default" id="toTurnLeft" name="往左旋转45°"><i class="iconfont if-size-2">&#xe64e;</i></button>
+		  <button type="button" class="btn btn-default" id="toTurnRight" name="往右旋转45°"><div class="if-sX"><i class="iconfont if-size-2">&#xe64e;</i></div></button>
+		  <button type="button" class="btn btn-default" id="toHorFlip" name="水平翻转"><i class="iconfont if-size-2">&#xe64b;</i></button>
+		  <button type="button" class="btn btn-default" id="toVerFlip" name="垂直翻转"><div class="if-ro"><i class="iconfont if-size-2">&#xe64b;</i></div></button>
+		</div>
+		<div>修图/群组</div>
+		<div class="btn-group b-30" role="group">
+		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe640;</i></button>
+		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe654;</i></button>
+		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe656;</i></button>
+		</div>
+		<div>文字</div>
+		<div class="btn-group b-30" role="group">
+		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe658;</i></button>
+		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe659;</i></button>
+		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe65c;</i></button>
+		</div>
+		<div>水平对齐</div>
+		<div class="btn-group b-30" role="group">
+		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe65d;</i></button>
+		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe660;</i></button>
+		  <button type="button" class="btn btn-default" id=""><div class="if-sX"><i class="iconfont if-size-2">&#xe65d;</i></div></button>
+		</div>
+		<div>垂直对齐</div>
+		<div class="btn-group b-30" role="group">
+		  <button type="button" class="btn btn-default" id=""><div class="if-ro"><i class="iconfont if-size-2">&#xe65d;</i></div></button>
+		  <button type="button" class="btn btn-default" id=""><i class="iconfont if-size-2">&#xe661;</i></button>
+		  <button type="button" class="btn btn-default" id=""><div class="if-ro90"><i class="iconfont if-size-2">&#xe65d;</i></div></button>
+		</div>			
+        <div class="controls">
+            <p> <span>透明:</span> <label> <input type="range" id="opacityControl" value="0" min="0" max="100"></label>  <span id="opacityControlValue">值:</span>  </p>
+            <p> <span>旋转:</span>  <label><input type="range" id="angleControl" value="0" min="0" max="360"></label> <span id="angleControlValue">值:</span>  </p>
+            <p> <span>圆角:</span>  <label><input type="range" id="top-control" value="150" min="0" max="300"></label> <span>值:</span>   </p>
+        </div>		
+					
+					
+				</div>
+			</div>
+	</div>	
+</div>
+<!-- 底部状态栏，是否为后边做属性栏的一种选择之一？ -->
+<nav class="navbar navbar-default navbar-fixed-bottom">
+  <div class="container">
+	<p>mousemove: <span id="testMouseMoveSpan"></span></p>
+	<p>tip: <span id="tipSpan"></span></p>   
+  </div>
+</nav>
+
+
+<script src="js/salvattore.min.js"></script>
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="js/giraffe.js"></script>
+
+</body>
+</html>

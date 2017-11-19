@@ -1,0 +1,260 @@
+html,body{
+	height:100%;
+}
+/*字体引用*/
+@font-face {
+  font-family: 'iconfont';
+  src: url('iconfont.eot');
+  src: url('iconfont.eot?#iefix') format('embedded-opentype'),
+  url('iconfont.woff') format('woff'),
+  url('iconfont.ttf') format('truetype'),
+  url('iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+  font-family:"iconfont" !important;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+.if-size{
+  line-height:60px;
+  color:#FFFFFF;
+  font-size:26px;	
+}
+.if-size-2{
+  color:#000000;
+  font-size:25px;	
+}
+.if-sX{
+	transform:scaleX(-1);
+}
+.if-sY{
+	transform:scaleY(-1);
+}
+.if-ro{
+	transform:rotate(90deg)
+}
+.if-ro90{
+	transform:rotate(-90deg)
+}
+
+.col-md-3, .col-md-7, .col-md-2{
+	padding:0px;
+	margin:0px;
+}
+.lr-10{
+	margin:0px 10px;
+}
+.tblr-10{
+	margin:10px;
+}
+.b-40{
+	margin-bottom:40px;
+}
+.b-30{
+	margin-bottom:30px;
+}
+.b-20{
+	margin-bottom:20px;
+}
+.white{
+	color:#FFFFFF;
+}
+
+/*顶部工具栏*/
+.top-toolbar{
+	background:#217fc4;
+	height:auto;
+}
+.bd-left{
+	width:340px;
+}
+.bd-right{
+	width:210px;
+	text-align:right;
+	float:right;
+}
+.bd-center{
+	width:calc(100% - 550px);
+}
+
+/*中间编辑器*/
+.md-edit-body{
+	background:#ebebeb;
+	height:calc(100% - 60px);
+}
+.md-height-100{
+	height:100%;	
+}
+.md-tool-icon{
+	width:60px;
+	background:#12161c;
+	float:left;
+	height:100%;
+}
+/*左侧工具栏按钮重新定义*/
+.md-tool-icon .nav-tabs>li>a{
+	margin:0px;
+	border:none;
+	border-radius:0px;
+}
+.md-tool-icon .nav-tabs{
+	border:none;
+}
+.md-tool-icon .nav-tabs>li{
+	margin-bottom:0px;
+	width:60px;
+}
+.md-tool-icon .nav>li>a{
+	padding:0px;
+	opacity:0.4;
+	transition:0.5s;
+	text-align:center;
+}
+.md-tool-icon .nav-tabs>li>a:hover{
+	background:#212937;
+	opacity:1;
+	transition:0.5s;
+}
+.md-tool-icon .nav-tabs>li.active>a{
+	background:#212937;
+	border:none;
+	opacity:1;
+	transition:0.5s;
+}
+/*//*/
+
+.md-canvas{
+	/*width:100%;
+	text-align:center;
+	margin-top:30px;*/
+	margin:0 auto;
+	width:990px;	
+}
+.md-tool-content{
+	width:280px;
+	padding:10px;
+	background:#212937;
+	float:left;
+	height:100%;
+}
+/*重新定义面板处样式*/
+.md-tool-content .btn-default,.md-tool-content .dropdown-menu{
+	width:100%;
+}
+.md-tool-content .btn{
+	border:2px solid #90949b;
+	color:#FFFFFF;
+	background:transparent;
+}
+.md-tool-content .btn-default.active.focus, 
+.md-tool-content .btn-default.active:focus,
+.md-tool-content .btn-default.active:hover, 
+.md-tool-content .btn-default:active.focus, 
+.md-tool-content .btn-default:active:focus, 
+.md-tool-content .btn-default:active:hover, 
+.md-tool-content .open>.dropdown-toggle.btn-default.focus, 
+.md-tool-content .open>.dropdown-toggle.btn-default:focus, 
+.md-tool-content .open>.dropdown-toggle.btn-default:hover{
+	background:#12161c;
+	color:#FFFFFF;
+}
+/*左侧工具栏按钮重新定义*/
+.md-tool-content .nav-tabs>li>a{
+	margin:0px;
+	border:none;
+	border-radius:0px;
+}
+.md-tool-content .nav-tabs{
+	border:none;
+	height:40px;
+}
+.md-tool-content .nav-tabs>li{
+	margin-bottom:0px;
+	width:50%;
+	text-align:center;
+}
+.md-tool-content .nav>li>a{
+	padding:0px;
+	opacity:0.4;
+	color:#FFFFFF;
+	line-height:40px;
+	transition:0.5s;
+	border-bottom:2px solid #FFFFFF;
+}
+.md-tool-content .nav-tabs>li>a:hover{
+	background:#212937;
+	opacity:1;
+	transition:0.5s;
+}
+.md-tool-content .nav-tabs>li.active>a{
+	background:#212937;
+	color:#FFFFFF;
+	border:none;
+	opacity:1;
+	line-height:40px;
+	transition:0.5s;
+	border-bottom:2px solid #217fc4;
+}
+/*//*/
+/*重新定义添加文字的按钮边框*/
+
+#grid .btn{
+	border: 2px dashed #90949b;
+	border-radius:0px;
+}
+.input-group .btn{
+	border:1px solid #90949b;
+}
+
+
+
+.md-right-tool{
+	width:210px;
+	background:#12161c;
+	float:right;
+	height:100%;
+	padding-top:10px;
+	text-align:center;
+}
+/*右侧工具栏btn*/
+.md-right-tool .btn{
+	padding: 2px 8px;
+}
+
+/*顶部去掉下划线*/
+.list-inline a:link, .list-inline a:visited{
+	text-decoration:none;
+}
+
+
+
+
+
+#grid[data-columns]::before {
+	content: '4 .column.size-1of4';
+}
+/* These are the classes that are going to be applied: */
+.column { float: left; }
+.size-1of1 {width:240px; margin:10px 0px 0px 10px;}
+.size-1of1 img{width:100%; height:auto; overflow:hidden; margin-bottom:10px; background:#FFFFFF; border:1px solid #4d545f;}
+
+.size-1of2 {width:115px; margin:10px 0px 0px 10px;}
+.size-1of2 img{width:100%; height:auto; overflow:hidden; margin-bottom:10px; background:#FFFFFF;}
+
+.size-1of3 {width:76px; margin:8px 0px 0px 8px;}
+.size-1of3 img{width:100%; height:auto; overflow:hidden; margin-bottom:8px; background:#FFFFFF;}
+
+.size-1of4 {width:25%;}
+
+
+.ImageInside{
+	border: 1px solid rgb(61, 243, 6);
+}
+
+
+/* 添加形状 */
+.ShapeInside{
+	border: 1px solid rgb(243, 168, 6);
+}

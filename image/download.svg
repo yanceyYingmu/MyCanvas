@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="图层_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="28.347px" height="28.347px" viewBox="0 0 28.347 28.347" enable-background="new 0 0 28.347 28.347" xml:space="preserve">
+<g display="none">
+	<g display="inline">
+		<ellipse fill="#FABF14" cx="14.188" cy="17.819" rx="12.755" ry="9.112"/>
+		<ellipse fill="#FFF100" cx="14.188" cy="15.997" rx="12.755" ry="9.111"/>
+		<g>
+			<path fill="#F39800" d="M14.188,9.619c5.421,0,9.841,3.021,10.172,6.834c0.014-0.152,0.033-0.303,0.033-0.456
+				c0-4.026-4.569-7.289-10.205-7.289S3.984,11.971,3.984,15.997c0,0.153,0.019,0.304,0.031,0.456
+				C4.347,12.64,8.768,9.619,14.188,9.619z"/>
+			<path fill="#FABF14" d="M14.188,23.285c5.421,0,9.841-3.02,10.172-6.832c-0.331-3.813-4.751-6.834-10.172-6.834
+				c-5.42,0-9.841,3.021-10.173,6.834C4.347,20.266,8.768,23.285,14.188,23.285z"/>
+		</g>
+	</g>
+	<g display="inline">
+		<ellipse fill="#FABF14" cx="14.188" cy="15.086" rx="12.755" ry="9.111"/>
+		<ellipse fill="#FFF100" cx="14.188" cy="13.263" rx="12.755" ry="9.111"/>
+		<g>
+			<path fill="#F39800" d="M14.188,6.886c5.421,0,9.841,3.02,10.172,6.833c0.014-0.152,0.033-0.302,0.033-0.456
+				c0-4.027-4.569-7.289-10.205-7.289S3.984,9.237,3.984,13.264c0,0.153,0.019,0.304,0.031,0.456
+				C4.347,9.906,8.768,6.886,14.188,6.886z"/>
+			<path fill="#FABF14" d="M14.188,20.552c5.421,0,9.841-3.021,10.172-6.832c-0.331-3.813-4.751-6.833-10.172-6.833
+				c-5.42,0-9.841,3.02-10.173,6.833C4.347,17.531,8.768,20.552,14.188,20.552z"/>
+		</g>
+	</g>
+	<g display="inline">
+		<ellipse fill="#FABF14" cx="14.188" cy="12.353" rx="12.755" ry="9.111"/>
+		<ellipse fill="#FFF100" cx="14.188" cy="10.53" rx="12.755" ry="9.111"/>
+		<g>
+			<path fill="#F39800" d="M14.188,4.152c5.421,0,9.841,3.021,10.172,6.833c0.014-0.151,0.033-0.301,0.033-0.456
+				c0-4.025-4.569-7.289-10.205-7.289S3.984,6.505,3.984,10.53c0,0.154,0.019,0.304,0.031,0.456
+				C4.347,7.174,8.768,4.152,14.188,4.152z"/>
+			<path fill="#FABF14" d="M14.188,17.818c5.421,0,9.841-3.02,10.172-6.833c-0.331-3.812-4.751-6.833-10.172-6.833
+				c-5.42,0-9.841,3.021-10.173,6.833C4.347,14.798,8.768,17.818,14.188,17.818z"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" d="M25.528,21.262v2.835
+			c0,0.779-0.638,1.417-1.417,1.417H4.268c-0.78,0-1.417-0.638-1.417-1.417v-2.835"/>
+	</g>
+	<g>
+		
+			<line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="14.189" y1="12.757" x2="14.189" y2="2.836"/>
+		<polyline fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" points="18.442,8.505 
+			14.19,12.756 9.938,8.505 		"/>
+	</g>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="22.693" y1="17.01" x2="5.686" y2="17.01"/>
+	
+		<line fill="none" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round" stroke-miterlimit="10" x1="22.693" y1="21.262" x2="5.686" y2="21.262"/>
+</g>
+</svg>
